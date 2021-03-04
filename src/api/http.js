@@ -96,6 +96,7 @@ http.interceptors.response.use(
 	},
 	error => {
 		loading.close();
+		if (!error) return Promise.reject();
 		if (error.response) {
 			switch (error.response.status) {
 				case 401:

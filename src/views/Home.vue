@@ -22,20 +22,6 @@ export default {
       .catch(err => {
         console.log('fail',err)
       })
-    this.$api.apiPost()
-      .then(res => {
-        console.log('Psuccess',res)
-      })
-      .catch(err => {
-        console.log('Pfail',err)
-      })
-    this.$api.apiPost()
-      .then(res => {
-        console.log('Psuccess',res)
-      })
-      .catch(err => {
-        console.log('Pfail',err)
-      })
   }
 };
 </script>
