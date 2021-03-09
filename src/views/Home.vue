@@ -14,14 +14,14 @@ export default {
     HelloWorld
   },
   mounted() {
-    this.$store.commit('add');
-    this.$api.apiGet()
-      .then(res => {
-        console.log('success',res)
-      })
-      .catch(err => {
-        console.log('fail',err)
-      })
+    // this.$store.commit('add');
+    // this.$api.apiGet()
+    //   .then(res => {
+    //     console.log('success',res)
+    //   })
+    //   .catch(err => {
+    //     console.log('fail',err)
+    //   })
   }
 };
 </script>

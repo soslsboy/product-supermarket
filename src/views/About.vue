@@ -6,7 +6,9 @@
       :r="10"
       :w="310"
       :h="155"
-      slider-text="向右滑动"
+      :imgs="picArray"
+      :show="false"
+      slider-text="向右滑动完成验证"
       @success="onSuccess"
       @fail="onFail"
       @refresh="onRefresh"
@@ -20,7 +22,17 @@ export default {
   name: "App",
   data() {
     return {
-      msg: ""
+      msg: "",
+      picArray: [
+        require('@/assets/verify/1.jpg'),
+        require('@/assets/verify/2.jpg'),
+        require('@/assets/verify/3.jpg'),
+        require('@/assets/verify/4.jpg'),
+        require('@/assets/verify/5.jpg'),
+        require('@/assets/verify/6.jpg'),
+        require('@/assets/verify/7.jpg'),
+        require('@/assets/verify/8.jpg')
+      ]
     };
   },
   mounted() {

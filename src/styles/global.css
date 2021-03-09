@@ -1,0 +1,123 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+
+ol, ul {
+	list-style: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+input:focus {
+	outline:none;
+}
+
+a {
+	text-decoration: none;
+}
+
+/************* overwrite ******************/
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, SimSun, sans-serif;
+	font-size: 14px;
+	line-height: 1.5;
+	-webkit-font-smoothing: antialiased;
+	background-color: #fff;
+}
+body, html {
+	width: 100%;
+	height: 100%;
+}
+#app {
+	width: 100%;
+	height: 100%;
+  color: #333;
+}
+
+/************************************公共样式*****************************/
+
+.width-1280 {
+	width: 1280px;
+	margin: 0 auto;
+}
+
+.el-input__inner::placeholder {
+		color: #999;
+}
+
+.el-input__inner::-webkit-input-placeholder {
+		/* WebKit browsers 适配谷歌 */
+		color: #999;
+}
+
+.el-input__inner:-moz-placeholder {
+		/* Mozilla Firefox 4 to 18 适配火狐 */
+		color: #999;
+}
+
+.el-input__inner::-moz-placeholder {
+		/* Mozilla Firefox 19+ 适配火狐 */
+		color: #999;
+}
+
+.el-input__inner:-ms-input-placeholder {
+		/* Internet Explorer 10+  适配ie*/
+		color: #999;
+}
+
+.el-form-item.is-error .el-input__inner {
+	border-color: #FF4C4C;
+}
+.el-input__inner {
+	border-radius: 0;
+	padding: 0 12px;
+	color: #333;
+	border-color: #A0A2A8;
+}
+.el-input__inner:focus {
+	border-color: #A0A2A8;
+}
+
+.btn-primary {
+	width: 100%;
+	height: 40px;
+	border-radius: 0;
+	background-color: #F90;
+	border-color: #F90;
+	text-align: center;
+	font-size: 16px;
+	color: #fff;
+	cursor: pointer;
+}
+.btn-primary:focus, .btn-primary:hover {
+	background-color: rgba(255, 153, 0, 0.5);
+	border-color: rgba(255, 153, 0, 0.5);
+}
+.btn-primary.is-active, .btn-primary:active {
+	background-color: #f19000;
+	border-color: #f19000;
+}

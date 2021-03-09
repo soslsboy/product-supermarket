@@ -12,7 +12,7 @@ export default [
         path: '/home',
         name: 'Home',
         component: Home,
-        meta: { title: '首页' }
+        meta: { title: '工业品超市' }
       }
     ]
   }
